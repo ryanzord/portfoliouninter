@@ -1,0 +1,140 @@
+/* Reset básico */
+body, h1, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações básicas */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+/* Estilos para o cabeçalho e navegação */
+header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e1e1e1;
+    transform: scale(1.1);
+}
+
+/* Estilos para as seções principais */
+section {
+    padding: 4rem 2rem;
+    background: #ffffff;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+section:nth-of-type(even) {
+    background: #f9f9f9;
+}
+
+section:hover {
+    background: #f1f1f1;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para os títulos e parágrafos */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #4a4a4a;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* Estilos para o formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+form button {
+    padding: 0.75rem;
+    border: none;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background: #357abd;
+    transform: scale(1.05);
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #e1e1e1;
+}
